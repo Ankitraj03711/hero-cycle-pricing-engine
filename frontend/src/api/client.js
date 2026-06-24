@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://hero-cycle-pricing-engine-jhnx.onrender.com/api';
 
 async function request(url, options = {}) {
   const response = await fetch(`${API_BASE}${url}`, {

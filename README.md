@@ -68,6 +68,16 @@ cd backend
 npm test
 ```
 
+## Deployment
+
+The simplest production setup is a single Node service that serves the API and the built frontend from the same origin.
+
+1. Build the frontend with `cd frontend && npm install && npm run build`.
+2. Start the backend with `cd backend && npm install && npm start`.
+3. Deploy the repo with the provided `render.yaml`, which automates the same flow on Render.
+
+Because the frontend calls `/api`, keeping both layers on one domain avoids CORS and API base URL issues.
+
 ## API Endpoints
 
 | Method | Endpoint | Description |
